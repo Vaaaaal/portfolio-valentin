@@ -1,0 +1,117 @@
+.layout {
+    margin: 0 7%;
+    padding: 0;
+
+    .header {
+        margin: 35px 0 75px;
+    }
+
+    .imgContainer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .scrollIndicator {
+            width: 5px;
+            height: 80vh;
+            background: #6969ff;
+            margin-left: 0;
+            margin-top: 20vh;
+        }
+
+        .heroImg {
+            width: 80vw;
+            margin-right: -20%;
+            margin-top: -20vh;
+        }
+    }
+
+    .headline {
+        margin: 25px 0 200px;
+        padding: 0 150px;
+        text-align: center;
+        font-size: 23px;
+        position: relative;
+
+        p {
+            margin: 10px;
+        }
+        span {
+            font-weight: bold;
+        }
+    }
+
+    .work {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 85px;
+
+        .workDescription {
+            width: 50%;
+            margin-right: 7%;
+
+            h2 {
+                font-size: 3.5rem;
+                font-weight: 800;
+                margin: 0 0 20px;
+            }
+
+            span {
+                font-weight: 600;
+            }
+        }
+    }
+
+    .cardPreview {
+        display: flex;
+        justify-content: center;
+
+        div {
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .about {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 85px;
+
+        .aboutDescription {
+            width: 50%;
+            margin-left: 7%;
+
+            h2 {
+                font-size: 3.5rem;
+                font-weight: 800;
+                margin: 0 0 20px;
+            }
+
+            span {
+                font-weight: 600;
+            }
+        }
+    }
+}
+
+.titleOverlay {
+    .big {
+        font-size: 5rem;
+        color: #6969ff;
+        font-weight: 400;
+    }
+}
+
+.circle {
+    position: absolute;
+    top: -50%;
+    right: 10%;
+    width: 40vh;
+    height: 40vh;
+    border-radius: 50%;
+    box-shadow: 0 10px 50px rgba(0, 0, 0, 0.125);
+}
