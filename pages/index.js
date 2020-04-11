@@ -82,6 +82,7 @@ const Home = () => (
                         justifyContent: "flex-end",
                         fontWeight: 800,
                         fontSize: "1.15rem",
+                        color: "#6969ff",
                     }}
                 >
                     voir plus
@@ -89,6 +90,7 @@ const Home = () => (
             </div>
 
             <div className={styles.about}>
+                <div className={styles.circle} />
                 <div className={styles.aboutDescription}>
                     <h2>A propos</h2>
                     <span>
@@ -111,6 +113,32 @@ const Home = () => (
 
                 <div className={styles.titleOverlay}>
                     <p className={styles.big}>about</p>
+                </div>
+
+                <div className={styles.timelineBar}>
+                    <img src="/assets/timeline.png" alt="Timeline about" />
+                </div>
+            </div>
+
+            <div className={styles.techno}>
+                <div className={styles.technoImg}>images here</div>
+                <div className={styles.technoDescription}>
+                    <h3>Technos que je sais utiliser</h3>
+
+                    <p style={{ marginBottom: 40 }}>
+                        Grâce à mon profil, je sais aussi bien utiliser React,
+                        Gatsby ou Wordpress pour créer des sites web, qu'Adobe
+                        XD, Photoshop ou Illustrator pour la création de
+                        visuels.
+                    </p>
+
+                    <p>
+                        <strong>Développement</strong> : React, Gatsby, Node JS,
+                        HTML, CSS, JS, Wordpress, MongoDB, GrapQL.
+                        <br />
+                        <strong>Design</strong> : Illustrator, Photoshop, XD,
+                        InDesign
+                    </p>
                 </div>
             </div>
         </main>

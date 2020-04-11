@@ -33,6 +33,16 @@
         font-size: 23px;
         position: relative;
 
+        .circle {
+            position: absolute;
+            top: -50%;
+            right: 10%;
+            width: 40vh;
+            height: 40vh;
+            border-radius: 50%;
+            box-shadow: 0 10px 50px rgba(0, 0, 0, 0.125);
+        }
+
         p {
             margin: 10px;
         }
@@ -67,9 +77,6 @@
         display: flex;
         justify-content: center;
 
-        div {
-        }
-
         img {
             width: 100%;
         }
@@ -79,7 +86,28 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin-bottom: 85px;
+        margin-bottom: 100px;
+        position: relative;
+
+        .circle {
+            position: absolute;
+            top: -23%;
+            left: -6%;
+            width: 46vh;
+            height: 46vh;
+            border-radius: 50%;
+            box-shadow: 0 10px 50px rgba(0, 0, 0, 0.125);
+        }
+
+        .timelineBar {
+            position: absolute;
+            bottom: -85px;
+            left: -10%;
+
+            img {
+                width: 40vw;
+            }
+        }
 
         .aboutDescription {
             width: 50%;
@@ -96,6 +124,24 @@
             }
         }
     }
+
+    .techno {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 200px;
+
+        .technoDescription {
+            width: 50%;
+            margin-right: 7%;
+
+            h3 {
+                font-size: 2.1rem;
+                font-weight: 800;
+                margin: 0 0 40px;
+            }
+        }
+    }
 }
 
 .titleOverlay {
@@ -104,14 +150,4 @@
         color: #6969ff;
         font-weight: 400;
     }
-}
-
-.circle {
-    position: absolute;
-    top: -50%;
-    right: 10%;
-    width: 40vh;
-    height: 40vh;
-    border-radius: 50%;
-    box-shadow: 0 10px 50px rgba(0, 0, 0, 0.125);
 }
