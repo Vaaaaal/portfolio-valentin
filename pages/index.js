@@ -7,12 +7,16 @@ const Home = () => (
     <div style={{ margin: 0, padding: 0 }}>
         <Head>
             <title>Valentin Cassus - Développeur & Web Designer 👾</title>
+            <meta
+                name="viewport"
+                content="width=device-width, initial-scale=1.0"
+            ></meta>
             <link href="/favicon.png" role="icon" />
         </Head>
 
         <main className={styles.layout}>
             <div className={styles.header}>
-                <img src="/logo.svg" width={150} />
+                <img src="/logo.svg" width={200} />
             </div>
 
             <div className={styles.imgContainer}>
@@ -206,6 +210,7 @@ const Home = () => (
             <div className={styles.infos}>
                 <div>
                     <div>
+                        <h4>Informations utiles</h4>
                         <ul>
                             <li>Mentions légales</li>
                             <li>Plan du site</li>

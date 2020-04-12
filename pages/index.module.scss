@@ -4,6 +4,10 @@
 
     .header {
         margin: 35px 0 75px;
+
+        @media screen and (max-width: 800px) {
+            margin: 35px 0 45px;
+        }
     }
 
     .imgContainer {
@@ -17,12 +21,37 @@
             background: #6969ff;
             margin-left: 0;
             margin-top: 20vh;
+
+            @media screen and (max-width: 800px) {
+                height: 450px;
+            }
         }
 
         .heroImg {
             width: 1000px;
             margin-right: -20%;
             margin-top: -20vh;
+
+            @media screen and (max-width: 1000px) {
+                width: 90vw;
+            }
+
+            @media screen and (max-width: 800px) {
+                width: 100vw;
+            }
+
+            @media screen and (max-width: 678px) {
+                min-width: 850px;
+                margin-right: -70%;
+            }
+
+            @media screen and (max-width: 550px) {
+                margin-right: -90%;
+            }
+
+            @media screen and (max-width: 480px) {
+                margin-right: -100%;
+            }
         }
     }
 
@@ -32,6 +61,23 @@
         text-align: center;
         font-size: 23px;
         position: relative;
+
+        @media screen and (max-width: 850px) {
+            padding: 0 75px;
+        }
+
+        @media screen and (max-width: 850px) {
+            margin-bottom: 50px;
+        }
+
+        @media screen and (max-width: 678px) {
+            padding: 0 25px;
+        }
+
+        @media screen and (max-width: 678px) {
+            font-size: 18px;
+            margin: 15px 0 20px;
+        }
 
         .circle {
             position: absolute;
@@ -57,14 +103,28 @@
         align-items: center;
         margin-bottom: 85px;
 
+        @media screen and (max-width: 800px) {
+            flex-direction: column;
+            justify-content: center;
+        }
+
         .workDescription {
             width: 50%;
             margin-right: 7%;
+
+            @media screen and (max-width: 800px) {
+                width: 80%;
+                margin-right: 0;
+            }
 
             h2 {
                 font-size: 3.5rem;
                 font-weight: 800;
                 margin: 0 0 20px;
+
+                @media screen and (max-width: 450px) {
+                    font-size: 2.5rem;
+                }
             }
 
             span {
@@ -74,9 +134,23 @@
     }
 
     .cardPreview {
-        display: flex;
-        justify-content: center;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+
+        @media screen and (max-width: 750px) {
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 0.5fr);
+        }
+
+        @media screen and (max-width: 450px) {
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(4, 0.5fr);
+        }
+
+        div {
+            height: 100%;
+        }
 
         img {
             width: 100%;
@@ -92,14 +166,25 @@
         margin-bottom: 100px;
         position: relative;
 
+        @media screen and (max-width: 800px) {
+            flex-direction: column-reverse;
+            justify-content: center;
+            margin-bottom: 0;
+        }
+
         .circle {
             position: absolute;
+            z-index: -2;
             top: -23%;
             left: -6%;
             width: 46vh;
             height: 46vh;
             border-radius: 50%;
             box-shadow: 0 10px 50px rgba(0, 0, 0, 0.125);
+
+            @media screen and (max-width: 800px) {
+                top: 15%;
+            }
         }
 
         .timelineBar {
@@ -109,6 +194,7 @@
 
             img {
                 width: 40vw;
+                min-width: 250px;
             }
         }
 
@@ -116,10 +202,19 @@
             width: 50%;
             margin-left: 7%;
 
+            @media screen and (max-width: 800px) {
+                width: 80%;
+                margin-left: 0;
+            }
+
             h2 {
                 font-size: 3.5rem;
                 font-weight: 800;
                 margin: 0 0 20px;
+
+                @media screen and (max-width: 450px) {
+                    font-size: 2.5rem;
+                }
             }
 
             span {
@@ -136,6 +231,12 @@
         margin-bottom: 100px;
         position: relative;
 
+        @media screen and (max-width: 800px) {
+            flex-direction: column-reverse;
+            justify-content: center;
+            margin-bottom: 0;
+        }
+
         .circle {
             position: absolute;
             top: -27%;
@@ -144,6 +245,10 @@
             height: 42vh;
             border-radius: 50%;
             box-shadow: 0 10px 50px rgba(0, 0, 0, 0.125);
+
+            @media screen and (max-width: 700px) {
+                top: -10%;
+            }
         }
 
         .technoImg {
@@ -157,6 +262,11 @@
             align-items: center;
             position: relative;
 
+            @media screen and (max-width: 800px) {
+                margin: 60px 0;
+                width: 80%;
+            }
+
             img {
                 width: 100%;
             }
@@ -165,6 +275,11 @@
         .technoDescription {
             width: 45%;
             margin-right: 7%;
+
+            @media screen and (max-width: 800px) {
+                width: 80%;
+                margin-right: 0;
+            }
 
             h3 {
                 font-size: 2.1rem;
@@ -178,6 +293,10 @@
         margin: 250px 0 150px;
         padding: 0 7%;
         position: relative;
+
+        @media screen and (max-width: 900px) {
+            margin: 200px 0 100px;
+        }
 
         .circle {
             position: absolute;
@@ -194,6 +313,22 @@
             line-height: 115px;
             letter-spacing: -4.5px;
             margin-bottom: 25px;
+
+            @media screen and (max-width: 900px) {
+                font-size: 90px;
+            }
+
+            @media screen and (max-width: 640px) {
+                font-size: 60px;
+                line-height: 70px;
+                letter-spacing: -2.5px;
+            }
+
+            @media screen and (max-width: 440px) {
+                font-size: 40px;
+                line-height: 60px;
+                letter-spacing: 0;
+            }
         }
 
         button {
@@ -219,12 +354,22 @@
         display: flex;
         justify-content: space-between;
         align-items: stretch;
-        padding: 20px 7%;
+        padding: 50px 10%;
         background: #f5f5f5;
+
+        @media screen and (max-width: 678px) {
+            flex-direction: column;
+            justify-content: center;
+            padding: 50px 15%;
+        }
 
         h4 {
             margin: 0 0 20px;
             padding: 0;
+
+            @media screen and (max-width: 678px) {
+                margin: 20px 0;
+            }
         }
 
         p {
