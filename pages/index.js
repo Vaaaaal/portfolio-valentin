@@ -121,7 +121,39 @@ const Home = () => (
             </div>
 
             <div className={styles.techno}>
-                <div className={styles.technoImg}>images here</div>
+                <div className={styles.circle} />
+                <div className={styles.technoImg}>
+                    <img
+                        src="/assets/logos-technos/react.png"
+                        alt="React logo"
+                    />
+                    <img
+                        src="/assets/logos-technos/gatsby.png"
+                        alt="Gatsby logo"
+                    />
+                    <img src="/assets/logos-technos/node.png" alt="Node logo" />
+                    <img
+                        src="/assets/logos-technos/mongo.png"
+                        alt="Mongo DB logo"
+                    />
+                    <img
+                        src="/assets/logos-technos/graphql.png"
+                        alt="GraphQL logo"
+                    />
+                    <img
+                        src="/assets/logos-technos/wordpress.png"
+                        alt="Wordpress logo"
+                    />
+                    <img src="/assets/logos-technos/xd.png" alt="XD logo" />
+                    <img
+                        src="/assets/logos-technos/illustrator.png"
+                        alt="Illustrator logo"
+                    />
+                    <img
+                        src="/assets/logos-technos/photoshop.png"
+                        alt="Photoshop logo"
+                    />
+                </div>
                 <div className={styles.technoDescription}>
                     <h3>Technos que je sais utiliser</h3>
 
@@ -135,11 +167,22 @@ const Home = () => (
                     <p>
                         <strong>Développement</strong> : React, Gatsby, Node JS,
                         HTML, CSS, JS, Wordpress, MongoDB, GrapQL.
-                        <br />
+                    </p>
+                    <p style={{ marginTop: 30 }}>
                         <strong>Design</strong> : Illustrator, Photoshop, XD,
                         InDesign
                     </p>
                 </div>
+            </div>
+
+            <div className={styles.contact}>
+                <div className={styles.circle} />
+                <p className={styles.bigContact}>Restons en contact</p>
+                <p>
+                    N'hésitez pas à me contacter pour démarrer un projet
+                    ensemble.
+                </p>
+                <button>M'envoyer un mail</button>
             </div>
         </main>
     </div>
