@@ -1,8 +1,10 @@
 import Head from "next/head";
+import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styles from "./index.module.scss";
 
 const Home = () => (
-    <div>
+    <div style={{ margin: 0, padding: 0 }}>
         <Head>
             <title>Valentin Cassus - Développeur & Web Designer 👾</title>
             <link href="/favicon.png" role="icon" />
@@ -76,17 +78,27 @@ const Home = () => (
                     </div>
                 </div>
 
-                <p
+                <div
                     style={{
                         display: "flex",
                         justifyContent: "flex-end",
-                        fontWeight: 800,
-                        fontSize: "1.15rem",
-                        color: "#6969ff",
+                        alignItems: "center",
                     }}
                 >
-                    voir plus
-                </p>
+                    <p
+                        style={{
+                            fontWeight: 800,
+                            fontSize: "1.15rem",
+                            color: "#6969ff",
+                        }}
+                    >
+                        voir plus
+                    </p>
+                    <FontAwesomeIcon
+                        style={{ color: "#6969ff", width: 15, marginLeft: 20 }}
+                        icon={faChevronRight}
+                    />
+                </div>
             </div>
 
             <div className={styles.about}>
@@ -182,9 +194,58 @@ const Home = () => (
                     N'hésitez pas à me contacter pour démarrer un projet
                     ensemble.
                 </p>
-                <button>M'envoyer un mail</button>
+                <button>
+                    <a href="mailto:cassusval@gmail.com?subject=Je%20souhaite%20commencer%20un%20projet!">
+                        M'envoyer un mail
+                    </a>
+                </button>
             </div>
         </main>
+
+        <footer className={styles.footer}>
+            <div className={styles.infos}>
+                <div>
+                    <div>
+                        <ul>
+                            <li>Mentions légales</li>
+                            <li>Plan du site</li>
+                        </ul>
+                    </div>
+                    <div style={{ marginTop: 10 }}>
+                        <p>Valentin Cassus</p>
+                        <p>Bordeaux, France</p>
+                        <a href="mailto:cassusval@gmail.com">
+                            cassusval@gmail.com
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li>Accueil</li>
+                        <li>A propos</li>
+                        <li>Portfolio</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Réseaux sociaux</h4>
+                    <ul>
+                        <li>Instagram</li>
+                        <li>Facebook</li>
+                        <li>LinkedIn</li>
+                    </ul>
+                </div>
+            </div>
+            <div className={styles.coffee}>
+                <p>site web réalisé avec beaucoup de musique et de café</p>
+            </div>
+            <div className={styles.copy}>
+                <p>
+                    Copyright &copy; {new Date().getFullYear()} Valentin Cassus.
+                    Tout droits réservés.
+                </p>
+            </div>
+        </footer>
     </div>
 );
 
